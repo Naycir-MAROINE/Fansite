@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body class="body1">
+    <main class="contactez-nous">
+        <h1>Contactez-nous</h1>
+        <p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+        <form action="/page-traitement-donnees" method="post">
+        <div>
+        <label for="nom et premon">Nom et Prenom</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom et Prenom" required>
+        </div>
+        <div>
+            <label for="numéro"> Numéro</label>
+            <input type="text" id="numéro" name="numéro" placeholder="Votre numéro" required>
+        </div>
+        <div>
+        <label for="email"> Adress gmail</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+        <option value="probleme-compte">Problème avec mon compte</option>
+        <option value="question-concert">Question à propos de mon billet de concert</option>
+        <option value="suivi-réservation">Suivi de ma réservation</option>
+        <option value="autre">Autre...</option>
+        </select>
+        </div>
+        <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div>
+        <button type="submit">Envoyer mon message</button>
+        </div>
+        </form>
+    </main>
+    <footer class="f1"><h2> @beauté_de l'ame 2023</h2></footer>
+    
+</body>
+</html>
